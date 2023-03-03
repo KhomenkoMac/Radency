@@ -29,7 +29,10 @@ public static class Mapping
             book.Id,
             book.Title,
             book.Author,
+            book.Cover,
             BooksRepository.EvaluateBookRating(book),
+            book.Genre,
+            book.Content,
             book.Reviews.Count);
     }
 

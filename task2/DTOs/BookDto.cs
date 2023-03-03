@@ -1,6 +1,14 @@
 ﻿namespace task2.DTOs;
 
-public record class GetBookDto(int Id,string Title, string Author, decimal Rating, int ReviewsNumber);
+public record class GetBookDto(
+    int Id,
+    string Title, 
+    string Author, 
+    string Cover, 
+    decimal Rating,
+    string Genre,
+    string Content,
+    int ReviewsNumber);
 
 //public class GetBookDto
 //{

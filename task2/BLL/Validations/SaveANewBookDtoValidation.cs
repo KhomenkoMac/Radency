@@ -11,9 +11,6 @@ public class SaveANewBookDtoValidation
         RuleFor(prop => prop.Title)
             .NotEmpty() // checking for nullability as well
             .MaximumLength(100);
-        RuleFor(prop => prop.Title)
-            .NotEmpty()
-            .MaximumLength(50);
         RuleFor(prop => prop.Content)
             .NotEmpty();
         RuleFor(prop => prop.Genre)
